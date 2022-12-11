@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.androidx.navigation.safeargs)
     alias(libs.plugins.hilt)
     alias(libs.plugins.aboutlibraries)
@@ -97,6 +98,7 @@ dependencies {
     implementation(libs.jellyfin.core)
     implementation(libs.material)
     implementation(libs.timber)
+    implementation(libs.kotlinx.serialization.json)
 
     // MPV
     implementation(files("libs/libmpv.aar"))
