@@ -1,4 +1,4 @@
-![StromRein banner](images/StromRein-banner.png)
+![StromRein banner](images/findroid-banner.png)
 
 # StromRein
 
