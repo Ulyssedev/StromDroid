@@ -38,7 +38,7 @@
                     app:layout_constraintDimensionRatio="H,3:2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Findroid.Image" />
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.StromRein.Image" />
 
                 <TextView
                     android:id="@+id/name"

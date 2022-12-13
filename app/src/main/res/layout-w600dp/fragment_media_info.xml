@@ -383,7 +383,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:shapeAppearance="@style/ShapeAppearanceOverlay.Findroid.Image" />
+                            app:shapeAppearance="@style/ShapeAppearanceOverlay.StromRein.Image" />
 
                         <TextView
                             android:id="@+id/next_up_name"

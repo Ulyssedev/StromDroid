@@ -1,8 +1,8 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Findroid" parent="Base.Theme.Findroid" />
+    <style name="Theme.StromRein" parent="Base.Theme.StromRein" />
 
-    <style name="Base.Theme.Findroid" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.StromRein" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary -->
         <item name="colorPrimary">@color/primary_light</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -28,8 +28,8 @@
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
 
         <!-- Shapes -->
-        <item name="shapeAppearanceCornerExtraSmall">@style/ShapeAppearance.Findroid.Corner.ExtraSmall</item>
-        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.Findroid.Corner.Small</item>
+        <item name="shapeAppearanceCornerExtraSmall">@style/ShapeAppearance.StromRein.Corner.ExtraSmall</item>
+        <item name="shapeAppearanceCornerSmall">@style/ShapeAppearance.StromRein.Corner.Small</item>
 
         <!-- Toolbar -->
         <item name="toolbarStyle">@style/Widget.Material3.Toolbar.Surface</item>

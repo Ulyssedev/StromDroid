@@ -1,8 +1,8 @@
-![Findroid banner](images/findroid-banner.png)
+![StromRein banner](images/StromRein-banner.png)
 
-# Findroid
+# StromRein
 
-Findroid is third-party Android application for Jellyfin that provides a native user interface to browse and play movies and series.
+StromRein is third-party Android application for Jellyfin that provides a native user interface to browse and play movies and series.
 
 I am developing this application in my spare time.
 

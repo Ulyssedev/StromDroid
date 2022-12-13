@@ -51,7 +51,7 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title"
-                app:shapeAppearance="@style/ShapeAppearanceOverlay.Findroid.Image"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay.StromRein.Image"
                 app:strokeColor="@null" />
 
             <LinearLayout
