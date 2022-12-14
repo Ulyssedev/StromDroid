@@ -1,7 +1,6 @@
 package dev.jdtech.jellyfin.repository
 
 import androidx.paging.PagingData
-import dev.jdtech.jellyfin.models.Intro
 import dev.jdtech.jellyfin.utils.SortBy
 import java.util.UUID
 import kotlinx.coroutines.flow.Flow
@@ -60,8 +59,6 @@ interface JellyfinRepository {
     suspend fun getMediaSources(itemId: UUID): List<MediaSourceInfo>
 
     suspend fun getStreamUrl(itemId: UUID, mediaSourceId: String): String
-
-    suspend fun getIntroTimestamps(itemId: UUID): Intro?
 
     suspend fun postCapabilities()
 

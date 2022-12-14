@@ -5,7 +5,6 @@ import android.media.AudioManager
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.viewModels
@@ -72,7 +71,6 @@ class PlayerActivity : BasePlayerActivity() {
         val audioButton = binding.playerView.findViewById<ImageButton>(R.id.btn_audio_track)
         val subtitleButton = binding.playerView.findViewById<ImageButton>(R.id.btn_subtitle)
         val speedButton = binding.playerView.findViewById<ImageButton>(R.id.btn_speed)
-        val skipIntroButton = binding.playerView.findViewById<Button>(R.id.btn_skip_intro)
 
         audioButton.isEnabled = false
         audioButton.imageAlpha = 75
@@ -82,8 +80,6 @@ class PlayerActivity : BasePlayerActivity() {
 
         speedButton.isEnabled = false
         speedButton.imageAlpha = 75
-
-        skipIntroButton.visibility = View.INVISIBLE
 
         audioButton.setOnClickListener {
             when (viewModel.player) {
@@ -158,16 +154,6 @@ class PlayerActivity : BasePlayerActivity() {
                 supportFragmentManager,
                 "speedselectiondialog"
             )
-        }
-
-        viewModel.currentIntro.observe(this) {
-            skipIntroButton.visibility = if (it != null) View.VISIBLE else View.INVISIBLE
-        }
-
-        skipIntroButton.setOnClickListener {
-            viewModel.currentIntro.value?.let {
-                binding.playerView.player?.seekTo((it.introEnd * 1000).toLong())
-            }
         }
 
         viewModel.fileLoaded.observe(this) {
